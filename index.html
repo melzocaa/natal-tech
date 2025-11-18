@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natal Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://emojigraph.org/media/apple/christmas-tree_1f384.png">
+  </head>
+  <body>
+  <canvas id="particles-canvas"></canvas>
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="main-title" id="main-title">NATAL TECH</h1>
+          <p class="subtitle" id="subtitle">Descontos de até 70%</p>
+          <div class="countdown-container">
+            <div class="countdown-item">
+              <span class="countdown-number" id="days">00</span>
+              <span class="countdown-label">Dias</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="hours">00</span>
+              <span class="countdown-label">Horas</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="minutes">00</span>
+              <span class="countdown-label">Minutos</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="seconds">00</span>
+              <span class="countdown-label">Segundos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="products-section">
+        <!-- Título e grade de produtos. O JS insere cartões de produto aqui. -->
+        <h2 class="products-title">Especial de Natal Mágico</h2>
+        <div class="products-grid"></div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+    window.__SUPABASE = window.__SUPABASE || {
+        url: window.SUPABASE_URL || 'https://eibxzqxyjolsnkdodouu.supabase.co',
+        anonKey: window.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVpYnh6cXh5am9sc25rZG9kb3V1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI4NjM1MDMsImV4cCI6MjA3ODQzOTUwM30.Ym5XYQY1ImL0QaXXqUHVsRK_Fpm2DeK6eU8o-EyxQLIS'
+      };
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
